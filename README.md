@@ -49,30 +49,30 @@ A Flutter demo app showcasing:
 ---
 
 ## 📂 Project Structure
-
-lib/
-├── blocs/
-│ ├── auth/
-│ │ ├── auth_bloc.dart
-│ │ ├── auth_event.dart
-│ │ └── auth_state.dart
-│ └── images/
-│ ├── images_bloc.dart
-│ ├── images_event.dart
-│ └── images_state.dart
-├── data/
-│ └── repositories/
-│ └── image_repository.dart
-├── models/
-│ └── image_model.dart
-├── ui/
-│ ├── screens/
-│ │ ├── login_screen.dart
-│ │ └── home_screen.dart
-│ └── widgets/
-│ └── custom_text_field.dart
-└── main.dart
-
+```mermaid
+flowchart TD
+    A[lib] --> B[blocs]
+    B --> C[auth]
+    C --> C1[auth_bloc.dart]
+    C --> C2[auth_event.dart]
+    C --> C3[auth_state.dart]
+    B --> D[images]
+    D --> D1[images_bloc.dart]
+    D --> D2[images_event.dart]
+    D --> D3[images_state.dart]
+    A --> E[data]
+    E --> F[repositories]
+    F --> F1[image_repository.dart]
+    A --> G[models]
+    G --> G1[image_model.dart]
+    A --> H[ui]
+    H --> I[screens]
+    I --> I1[login_screen.dart]
+    I --> I2[home_screen.dart]
+    H --> J[widgets]
+    J --> J1[custom_text_field.dart]
+    A --> K[main.dart]
+```
 
 ---
 
@@ -88,8 +88,9 @@ lib/
 flutter pub get
 
 ### 3️⃣ Run the app
-
+```sh
 flutter run
+```
 
 text
 
@@ -98,7 +99,9 @@ text
 ## 📦 Building APK
 
 ### Universal (fat) APK
+```sh
 flutter build apk
+```
 
 text
 **Output:**  
